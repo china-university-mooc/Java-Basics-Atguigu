@@ -10,11 +10,50 @@ public class RadixConversion {
 		System.out.println(decimalToRadix("255", 16));
 		System.out.println(radixToDecimal("FF", 16));
 
-		System.out.println(radixToOther("FF", 16, 2));
-		System.out.println(radixToOther("16", 10, 17));
+		System.out.println(radixToOther("0xFF", 2));
+		System.out.println(radixToOther("16", 17));
+
+		System.out.println("=====十进制 -> 十六进制");
+		System.out.println(radixToOther("123", 16));
+		System.out.println(radixToOther("256", 16));
+		System.out.println(radixToOther("87", 16));
+		System.out.println(radixToOther("12", 16));
+
+		System.out.println("=====十进制 -> 二进制");
+		System.out.println(radixToOther("123", 2));
+		System.out.println(radixToOther("256", 2));
+		System.out.println(radixToOther("87", 2));
+		System.out.println(radixToOther("12", 2));
+
+		System.out.println("=====十六进制 -> 十进制");
+		System.out.println(radixToOther("0x123", 10));
+		System.out.println(radixToOther("0x25F", 10));
+		System.out.println(radixToOther("0x38", 10));
+		System.out.println(radixToOther("0x62", 10));
+
+		System.out.println("=====十六进制 -> 二进制");
+		System.out.println(radixToOther("0x123", 2));
+		System.out.println(radixToOther("0x25F", 2));
+		System.out.println(radixToOther("0x38", 2));
+		System.out.println(radixToOther("0x62", 2));
 	}
 
-	public static String radixToOther(String src, int fromRadix, int toRadix) {
+	public static String radixToOther(String src, int toRadix) {
+		int fromRadix = 10;
+		if (src.charAt(0) == '0') {
+			char c = src.charAt(1);
+			if (c == 'x' || c == 'X') {
+				fromRadix = 16;
+				src = src.substring(2);
+			} else if (c == 'b' || c == 'B') {
+				fromRadix = 2;
+				src = src.substring(2);
+			} else {
+				fromRadix = 8;
+				src = src.substring(1);
+			}
+		}
+
 		return decimalToRadix(radixToDecimal(src, fromRadix), toRadix);
 	}
 
