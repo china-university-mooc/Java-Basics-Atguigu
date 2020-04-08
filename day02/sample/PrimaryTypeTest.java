@@ -40,11 +40,13 @@ public class PrimaryTypeTest {
 	public static void charTest() {
 		System.out.println("=====charTest");
 		char c1 = '中';
-		char c2 = '\n';
+		char c2 = '\t';
 		char c3 = '\u12ab';
-		System.out.println(c1);
-		System.out.println(c2);
-		System.out.println(c3);
+		char c5 = 0x12ab;
+		System.out.print(c1);
+		System.out.print(c2);
+		System.out.print(c3);
+		System.out.println(c5);
 
 		char c4 = 'A';
 		System.out.println(c4 + 1);
