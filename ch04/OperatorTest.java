@@ -19,6 +19,9 @@ public class OperatorTest {
 		i = j = 10;
 		System.out.println(m);
 		System.out.println(n);
+		int ii = 12;
+		ii *= 0.1;
+		System.out.println(ii);
 
 		int x = 2;
 		int y = 2;
@@ -40,5 +43,8 @@ public class OperatorTest {
 		int i5 = 9;
 		System.out.println(i5 << 27);
 		System.out.println(i5 << 28);
+
+		// double d = 2.0;
+		// System.out.println(d << 2);
 	}
 }
