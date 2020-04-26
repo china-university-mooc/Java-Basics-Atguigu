@@ -24,6 +24,7 @@ public class ArrayDemo1 {
 				maxScore = scores[i];
 			}
 		}
+		scan.close();
 		System.out.println("最高分是：" + maxScore);
 		
 		for (int i = 0; i < scores.length; i++) {
