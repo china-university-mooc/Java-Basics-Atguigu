@@ -1,4 +1,4 @@
-package com.itutry.demo;
+package com.itutry.exer;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author itutry
  * @date 2020年4月26日下午10:33:03
  */
-public class ArrayDemo1 {
+public class ArrayExer1 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

@@ -6,7 +6,7 @@ package com.itutry.java;
  * @author itutry
  * @date 2020年4月26日下午10:27:25
  */
-public class ArrayTest {
+public class ArrayDemo {
 
 	public static void main(String[] args) {
 		// 静态初始化

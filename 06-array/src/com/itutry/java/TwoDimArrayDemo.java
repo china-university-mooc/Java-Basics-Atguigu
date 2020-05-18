@@ -6,7 +6,7 @@ package com.itutry.java;
  * @author itutry
  * @date 2020年4月26日下午10:53:22
  */
-public class TwoDimArrayTest {
+public class TwoDimArrayDemo {
 
 	public static void main(String[] args) {
 		// 静态初始化
