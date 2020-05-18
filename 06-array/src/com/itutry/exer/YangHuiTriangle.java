@@ -10,7 +10,7 @@ public class YangHuiTriangle {
 
 	public static void main(String[] args) {
 		int n = 10;
-		int[][] yangHui = new int[10][];
+		int[][] yangHui = new int[n][];
 		
 		for (int i =0; i < yangHui.length; i++) {
 			int len = i + 1;
