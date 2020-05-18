@@ -1,4 +1,4 @@
-package com.itutry.java;
+package com.itutry.demo;
 
 /**
  * 二维数组的使用
