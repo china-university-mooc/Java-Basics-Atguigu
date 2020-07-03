@@ -8,7 +8,8 @@ public class EcmDef {
 			int i = Integer.parseInt(args[0]);
 			int j = Integer.parseInt(args[1]);
 			
-			ecm(i, j);
+			int resutl = ecm(i, j);
+			System.out.println(resutl);
 		} catch (NumberFormatException e) {
 			System.out.println("数据类型不一致");
 		} catch (ArrayIndexOutOfBoundsException e) {
@@ -23,7 +24,7 @@ public class EcmDef {
 	
 	public static int ecm(int i, int j) throws EcDef {
 		if (i < 0 || j < 0) {
-			throw new EcDef("输入有负数");
+			throw new EcDef("分数或分母为负数了");
 		}
 		return i / j;
 	}
