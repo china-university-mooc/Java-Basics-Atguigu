@@ -24,6 +24,7 @@ class Student {
 //			throw new RuntimeException("输入的数据非法");
 //			throw new Exception("输入的数据非法");
 			throw new MyException("不能输入负数");
+//			throw new String("不能输入负数");
 		}
 	}
 
